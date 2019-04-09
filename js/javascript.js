@@ -189,7 +189,7 @@ var religion = [
   'Cults of the Dragon Below, Deities of Madness (NE)',
   'The Path of Light, Philosophy of Light and Self-Improvement (LN)',
   'The Undying Court, Elven Ancestors (NG)',
-  'The Spirits of the PAst, Elven Ancestors (CG)',
+  'The Spirits of the Past, Elven Ancestors (CG)',
 
   'Bahamut, Dragon God of Good (LG)',
   'Blibdoolpoolp, Kuo-Toa Goddess (NE)',
