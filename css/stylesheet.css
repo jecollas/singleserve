@@ -2,8 +2,8 @@
 
 body {
   padding: 2em;
-  background-image: url("https://www.wildtextures.com/wp-content/uploads/wildtextures-aged_paper_texture.jpg");
-  background-position: center;
+  background: #B29B8C url("../img/paper_texture2.jpg") center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -12,9 +12,11 @@ h1 {
   margin-top: 1em;
   margin-bottom: 1em;
   display: inherit;
+  font-family: 'Metamorphous', cursive;
 }
 
 button {
+  font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   padding: .3em;
   text-decoration: none;
