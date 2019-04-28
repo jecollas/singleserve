@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__npcgenerator_com">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="/manifest.json">
+  <title>NPC Generator</title>
+  <meta name="Description" content="Website for generating randomized Non-Player Characters (NPCs) with attributes, in-depth and unique descriptions as well as a plot hook">
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script>
+  !function(e,a,t,n,g,c,o){
+    e.GoogleAnalyticsObject=g,e.ga=e.ga||function(){
+      (e.ga.q=e.ga.q||[]).push(arguments)
+    }
+    ,e.ga.l=1*new Date,c=a.createElement(t),o=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",o.parentNode.insertBefore(c,o)
+  }
+    (window,document,"script",0,"ga"),ga("create","UA-86198907-1","auto"),ga("send","pageview")
+</script>
+<link href="/static/css/main.5d59164d.chunk.css" rel="stylesheet">
+</head>
+<body data-gr-c-s-loaded="true">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="container">
+      <div>
+        <div class="row">
+          <div class="user-info-col top-padding options-panel col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0"><div>
+            <div class="title-image">
+            </div>
+          </div>
+          <div>
+            <div class="hidden-panel panel panel-default">
+              <div class="panel-body">
+                <form>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label">Race</label>
+                        <select class="form-control">
+                          <option value="random">Random</option>
+                          <option value="0">Aasimar</option>
+                          <option value="1">Dragonborn</option>
+                          <option value="2">Dwarf</option>
+                          <option value="3">Elf</option>
+                          <option value="4">Firbolg</option>
+                          <option value="5">Gnome</option>
+                          <option value="6">Goblin</option>
+                          <option value="7">Goliath</option>
+                          <option value="8">Halfling</option>
+                          <option value="9">Half-Elf</option>
+                          <option value="10">Half-Orc</option>
+                          <option value="11">Human</option>
+                          <option value="12">Kenku</option>
+                          <option value="13">Lizardfolk</option>
+                          <option value="14">Medusa</option>
+                          <option value="15">Orc</option>
+                          <option value="16">Tabaxi</option>
+                          <option value="17">Tiefling</option>
+                          <option value="18">Triton</option>
+                          <option value="19">Troglodyte</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label">Sex</label>
+                        <select class="form-control">
+                          <option value="random">Random</option>
+                          <option value="0">Male</option>
+                          <option value="1">Female</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label">Alignment</label>
+                        <select class="form-control">
+                          <option value="random">Random</option>
+                          <option value="1">Good</option>
+                          <option value="2">Evil</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label">Plot Hooks</label>
+                        <select class="form-control">
+                          <option value="random">Random</option>
+                          <option value="0">Classic</option>
+                          <option value="1">Funky</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form-group">
+                        <label class="control-label">Occupation</label>
+                        <select class="form-control">
+                          <option value="random">Random</option>
+                          <option value="0">Class</option>
+                          <option value="1">Profession</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="center-block generate-button btn btn-success"></button>
+                </form>
+                <form>
+                  <button type="submit" class="center-block download-button download-button btn btn-success"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-padding col-md-9 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          <div class="npc-data" id="downloadData">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <div class="first-row-height panel panel-default">
+                  <div class="panel-heading">Description</div>
+                  <div class="panel-body">
+                    <p hidden="">#</p>
+                    <p>Borin Wheatflow is a 23 year old male human pickpocket.</p>
+                    <p hidden="">#</p>
+                    <p>He has very long, wavy, auburn hair and golden eyes.</p>
+                    <p hidden="">#</p>
+                    <p>He has soft, sunburned, red skin.</p><p hidden="">#</p>
+                    <p>He stands 172cm (5'7") tall and has a round build.</p>
+                    <p hidden="">#</p>
+                    <p>He has a round, mediocre face.</p>
+                    <p hidden="">#</p>
+                    <div>
+                      <p hidden="">#</p>
+                      <p>He is branded as a slave on his right hand.</p>
+                    </div>
+                    <p hidden="">#</p>
+                    <p hidden="">#</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <div class="first-row-height panel panel-default">
+                  <div class="panel-heading">Personality Traits</div>
+                  <div class="panel-body">
+                    <p hidden="">#</p>
+                    <p>He quietly worships Akadi, Goddess of air, movement and speed. (True Neutral)</p>
+                    <p hidden="">#</p>
+                    <p>He is always prepared. </p>
+                    <p hidden="">#</p>
+                    <p>He is very quick to trust other people. </p>
+                    <p>He cares about his friends and will do anything for them.</p>
+                    <p hidden="">#</p>
+                    <p hidden="">#</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="second-row-height panel panel-default">
+                  <div class="panel-heading">Ability Scores</div>
+                  <div class="panel-body">
+                    <p hidden="">#</p>
+                    <div class="row">
+                      <div class="no-right-pad no-left-pad ability col-lg-12 col-md-2 col-xs-12">
+                        <table class="ability-table">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <b>Strength</b>
+                                <p hidden=""> - </p>
+                              </td>
+                              <td class="ability-number">13
+                                <p hidden="">#</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <b>Dexterity</b>
+                                <p hidden=""> - </p>
+                              </td>
+                              <td class="ability-number">14
+                                <p hidden="">#</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <b>Constitution</b>
+                                <p hidden=""> - </p>
+                              </td>
+                              <td class="ability-number">13
+                                <p hidden="">#</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <b>Intellect</b>
+                                <p hidden=""> - </p>
+                              </td>
+                              <td class="ability-number">9
+                                <p hidden="">#</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <b>Wisdom</b>
+                                <p hidden=""> - </p>
+                              </td>
+                              <td class="ability-number">11
+                                <p hidden="">#</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <b>Charisma</b>
+                                <p hidden=""> - </p>
+                              </td>
+                              <td class="ability-number">9
+                                <p hidden="">#</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <p hidden="">#</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="second-row-height panel panel-default">
+                  <div class="panel-heading">Relationships</div>
+                  <div class="panel-body">
+                    <p hidden="">#</p>
+                    <p>
+                      <b>Sexual Orientation </b>
+                    </p>
+                    <p hidden="">- </p>
+                    <p>Straight</p>
+                    <p hidden="">#</p>
+                    <p>
+                      <b>Relationship Status </b>
+                    </p>
+                    <p hidden="">- </p>
+                    <p>Widowed</p>
+                    <p hidden="">#</p>
+                    <p hidden="">#</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="second-row-height panel panel-default">
+                  <div class="panel-heading">Alignment Tendencies</div>
+                  <div class="panel-body">
+                    <p hidden="">#</p>
+                    <table class="alignment-table">
+                      <tbody>
+                        <tr>
+                          <td class="width-thin">
+                            <b>Good</b>
+                          </td>
+                          <td hidden="">:    </td>
+                          <td class="alignment-number">3</td>
+                          <td hidden="">  </td>
+                          <td class="width-thin">
+                            <b>Lawful</b>
+                          </td>
+                          <td hidden="">:  </td>
+                          <td class="alignment-number">2</td>
+                        </tr>
+                        <tr hidden="">
+                          <td>#</td>
+                        </tr>
+                        <tr>
+                          <td class="width-thin">
+                            <b>Neutral</b>
+                          </td>
+                          <td hidden="">: </td>
+                          <td class="alignment-number">5</td>
+                          <td hidden="">  </td>
+                          <td class="width-thin">
+                            <b>Neutral</b>
+                          </td>
+                          <td hidden="">: </td>
+                          <td class="alignment-number">5</td>
+                        </tr>
+                        <tr hidden="">
+                          <td>#</td>
+                        </tr>
+                        <tr>
+                          <td class="width-thin">
+                            <b>Evil</b>
+                          </td>
+                          <td hidden="">:    </td>
+                          <td class="alignment-number">5</td>
+                          <td hidden="">  </td>
+                          <td class="width-thin">
+                            <b>Chaotic</b>
+                          </td>
+                          <td hidden="">: </td>
+                          <td class="alignment-number">4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p hidden="">#</p>
+            <p hidden="">#</p>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="align-center panel panel-default">
+                  <div class="panel-heading">Plot Hook</div
+                    ><div class="panel-body">
+                      <p hidden="">#</p>
+                      He has learned of the existence of a shrine to the archdevil Bel.
+                      <p hidden="">#</p>
+                      <p hidden="">#</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="bs-docs-footer" role="contentinfo">
+              <ul class="bs-docs-social-buttons">
+                <li>
+                  <div>
+                    <p class="footer-outline">
+                      <b>Check out my video game!</b>
+                    </p>
+                    <a href="http://store.steampowered.com/app/769410/Electromaze_Tower_Defense/" target="_blank" rel="noopener noreferrer">
+                      <div class="center-block EMD-button">
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p class="footer-outline">
+                      <b>Follow my next RPG on discord!</b>
+                    </p>
+                    <a href="https://discord.gg/VVb6hDr" target="_blank" rel="noopener noreferrer">
+                      <div class="center-block GM-button">
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <div>
+                <p class="footer-outline">
+                  <b> Comments, suggestions, crazy hook or trait idea? </b>
+                </p>
+                <p> Email me at:
+                  <a href="mailto:etienspb@gmail.com">EtiensPB@gmail.com</a>
+                  !
+                </p>
+              </div>
+              <div class="bs-docs-social">
+                <ul class="bs-docs-social-buttons">
+                  <li>
+                    <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=cellule&amp;repo=dndGenerator&amp;type=watch&amp;count=true" width="95" height="20" title="Star on GitHub">
+                    </iframe>
+                  </li>
+                  <li>
+                    <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=cellule&amp;repo=dndGenerator&amp;type=fork&amp;count=true" width="92" height="20" title="Fork on GitHub">
+                    </iframe>
+                  </li>
+                </ul>
+              </div>
+              <p>Code licensed under
+                <a href="https://github.com/cellule/dndGenerator/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
+                .
+              </p>
+              <ul class="bs-docs-footer-links muted">
+                <li>Currently v0.3.0</li>
+                <li>·</li>
+                <li>
+                  <a href="https://github.com/cellule/dndGenerator/">GitHub</a>
+                </li>
+                <li>·</li>
+                <li>
+                  <a href="https://github.com/cellule/dndGenerator/issues?state=open">Issues</a>
+                </li>
+                <li>·</li>
+                <li>
+                  <a href="https://github.com/cellule/dndGenerator/releases">Releases</a>
+                </li>
+              </ul>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+  !function(l){
+    function e(e){
+      for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];
+      f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;
+      for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);
+      for(s&&s(e);i.length;)i.shift()();
+      return c.push.apply(c,u||[]),a()
+    }
+    function a(){
+      for(var e,r=0;r<c.length;r++){
+      for(var t=c[r],n=!0,o=1;o<t.length;o++){
+        var u=t[o];
+        0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))
+      }
+      return e
+    }
+    var t={},p={2:0},c=[];
+    function f(e){
+      if(t[e])return t[e].exports;
+      var r=t[e]={i:e,l:!1,exports:{}};
+      return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports
+    }
+    f.m=l,f.c=t,f.d=function(e,r,t){
+      f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})
+    }
+    ,f.r=function(e){
+      "undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})
+    }
+    ,f.t=function(r,e){
+      if(1&e&&(r=f(r)),8&e)return r;
+      if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;
+      var t=Object.create(null);
+      if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));
+      return t},f.n=function(e){
+        var r=e&&e.__esModule?function(){
+        return e.default}:function(){return e};
+        return f.d(r,"a",r),r},f.o=function(e,r){
+          return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";
+          var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);
+          r.push=e,r=r.slice();
+          for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()
+        }
+        ([])
+</script>
+<script src="/static/js/1.0aeb11fa.chunk.js"></script>
+<script src="/static/js/main.57fbdc80.chunk.js"></script>
+</body>
+<span class="gr__tooltip">
+  <span class="gr__tooltip-content"></span>
+  <i class="gr__tooltip-logo"></i>
+  <span class="gr__triangle">
+  </span>
+</span>
+</html>
