@@ -3,6 +3,7 @@
 body {
   padding: 2em;
   background: #B29B8C url("../img/paper_texture2.jpg") center;
+  background-position: top;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -24,7 +25,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
-  margin-bottom: 2em;
   background-color: #242527;
   color: #FEFDFA;
   border: solid 3px;
@@ -32,7 +32,7 @@ button {
 }
 
 button:active {
-  background-color: #E6CEBC;
+  background-color: #897263;
   color: #242527;
 }
 
