@@ -333,11 +333,26 @@ function randomString(strings) {
     return strings[randomNumber];
 }
 
-var max = Math.max.apply(null, stats);
-for (var i = 0; i < stats.length; i++) {
-  if (stats[i] > max) {
-    max = stats[i];
-  }
+// returns the key with the highest value
+function maxStatsKey(stats) {
+   var max = 0;
+   var maxKey = "";
+   for(var key in stats) {
+     if (stats[key] > max) {
+       max = stats[key];
+       maxKey = key;
+     }
+   }
+
+  return maxKey;
+}
+
+function switchJobs(stats, key1, key2) {
+  var val1 = stats[key1];
+  stats[key1] = stats[key2];
+  stats[key2] = val1;
+
+  return stats;
 }
 
 function newChar() {
@@ -435,27 +450,31 @@ function newChar() {
         switch (job) {
         case 'Barbarian':
         case 'Fighter':
-            max = str;
+            rightKey = "str";
             break;
         case 'Monk':
         case 'Ranger':
         case 'Rogue':
-            max = dex;
+            rightKey = "dex";
             break;
         case 'Wizard':
-            max = int;
+            rightKey = "int";
             break;
         case 'Cleric':
         case 'Druid':
-            max =  wis;
+            rightKey = "wis";
             break;
         case 'Bard':
         case 'Paladin':
         case 'Sorcerer':
         case 'Warlock':
-            max = cha;
+            rightKey = "cha";
             break;
         }
+
+        var maxKey = maxStatsKey(stats);
+        stats = switchJobs(stats, rightKey, maxKey)
+
         document.getElementById('jobDisplay').innerHTML = job;
 
         alignment = randomString(sheetGen["alignment"]);
@@ -467,17 +486,11 @@ function newChar() {
         religion = randomString(sheetGen["religion"]);
         document.getElementById('religionDisplay').innerHTML = religion;
 
-    str = d3Random();
-    document.getElementById('strength').innerHTML = str;
-    dex = d3Random();
-    document.getElementById('dexterity').innerHTML = dex;
-    con = d3Random();
-    document.getElementById('constitution').innerHTML = con;
-    int = d3Random();
-    document.getElementById('intelligence').innerHTML = int;
-    wis = d3Random();
-    document.getElementById('wisdom').innerHTML = wis;
-    cha = d3Random();
-    document.getElementById('charisma').innerHTML = cha;
+    document.getElementById('strength').innerHTML = stats["str"];
+    document.getElementById('dexterity').innerHTML = stats["dex"];
+    document.getElementById('constitution').innerHTML = stats["con"];
+    document.getElementById('intelligence').innerHTML = stats["int"];
+    document.getElementById('wisdom').innerHTML = stats["wis"];
+    document.getElementById('charisma').innerHTML = stats["cha"];
 
 }
