@@ -312,21 +312,25 @@ function d3Random() {
     return random(6) + random(6) + random(6) + 3;
 }
 
-var str = d3Random();
-var dex = d3Random();
-var con = d3Random();
-var int = d3Random();
-var wis = d3Random();
-var cha = d3Random();
+function newStats() {
+  var str = d3Random();
+  var dex = d3Random();
+  var con = d3Random();
+  var int = d3Random();
+  var wis = d3Random();
+  var cha = d3Random();
 
-var stats = {
-    "str": str,
-    "dex": dex,
-    "con": con,
-    "int": int,
-    "wis": wis,
-    "cha": cha
+  var stats = {
+      "str": str,
+      "dex": dex,
+      "con": con,
+      "int": int,
+      "wis": wis,
+      "cha": cha
 };
+
+return stats;
+}
 
 function randomString(strings) {
     var randomNumber = random(strings.length);
@@ -356,6 +360,8 @@ function switchJobs(stats, key1, key2) {
 }
 
 function newChar() {
+
+        var stats = newStats();
 
         race = randomString(sheetGen["race"]);
         document.getElementById('raceDisplay').innerHTML = race;
@@ -473,7 +479,7 @@ function newChar() {
         }
 
         var maxKey = maxStatsKey(stats);
-        stats = switchJobs(stats, rightKey, maxKey)
+        stats = switchJobs(stats, rightKey, maxKey);
 
         document.getElementById('jobDisplay').innerHTML = job;
 
