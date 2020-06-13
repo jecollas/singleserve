@@ -33,7 +33,66 @@ var race = [
         'Lightfoot Halfling',
         'Stout Halfling',
         'Human',
-        'Tiefling'
+        'Tiefling',
+
+        'Aarakocra',
+        'Aasimar',
+        'Fallen Aasimar',
+        'Protector Aasimar',
+        'Scourge Aasimar',
+        'Bugbear',
+        'Centaur',
+        'Changeling',
+        'Duergar Dwarf',
+        'Eladrin Elf',
+        'Pallid Elf',
+        'Sea Elf',
+        'Shadar-kai Elf',
+        'Firbolg',
+        'Genasi',
+        'Air Genasi',
+        'Earth Genasi',
+        'Fire Genasi',
+        'Water Genasi',
+        'Gith',
+        'Githyanki Gith',
+        'Githzerai Gith',
+        'Deep Gnome',
+        'Goblin',
+        'Goliath',
+        'Ghostwise Halfling',
+        'Lotusden Halfling',
+        'Hobgoblin',
+        'Kalashtar',
+        'Kenku',
+        'Kobold',
+        'Leonin',
+        'Lizardfolk',
+        'Loxodon',
+        'Minotaur',
+        'Orc',
+        'Satyr',
+        'Shifter',
+        'Beasthide Shifter',
+        'Longtooth Shifter',
+        'Swiftstride Shifter',
+        'Wildhunt Shifter',
+        'Simic Hybrid',
+        'Tabaxi',
+        'Asmodeus Tiefling',
+        'Baalzebul Tiefling',
+        'Dispater Tiefling',
+        'Fierna Tiefling',
+        'Glasya Tiefling',
+        'Levistus Tiefling',
+        'Mammon Tiefling',
+        'Mephistopheles Tiefling',
+        'Zariel Tiefling',
+        'Triton',
+        'Vedalken',
+        'Verdan',
+        'Warforged',
+        'Yuan-ti Pureblood'
     ];
 
 var gender = [
@@ -446,6 +505,206 @@ function newChar() {
         case 'Tiefling':
             document.getElementById('intelligence').innerHTML + 1;
             document.getElementById('charisma').innerHTML + 2;
+            break;
+
+        case 'Aarakocra':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Aasimar':
+        case 'Protector Aasimar':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Fallen Aasimar':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('strength').innerHTML + 1;
+            break;
+        case 'Scourge Aasimar':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('constitution').innerHTML + 1;
+            break;
+        case 'Bugbear':
+            document.getElementById('strength').innerHTML + 2;
+            document.getElementById('dexterity').innerHTML + 1;
+            break;
+        case 'Centaur':
+            document.getElementById('strength').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Changeling':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Duergar Dwarf':
+            document.getElementById('constitution').innerHTML + 2;
+            document.getElementById('strength').innerHTML + 1;
+            break;
+        case 'Eladrin Elf':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('intelligence').innerHTML + 1;
+            break;
+        case 'Pallid Elf':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Sea Elf':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('constitution').innerHTML + 1;
+            break;
+        case 'Shadar-kai Elf':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('constitution').innerHTML + 1;
+            break;
+        case 'Firbolg':
+            document.getElementById('wisdom').innerHTML + 2;
+            document.getElementById('strength').innerHTML + 1;
+            break;
+        case 'Genasi':
+            document.getElementById('constitution').innerHTML + 2;
+            break;
+        case 'Air Genasi':
+            document.getElementById('constitution').innerHTML + 2;
+            document.getElementById('dexterity').innerHTML + 1;
+            break;
+        case 'Earth Genasi':
+            document.getElementById('constitution').innerHTML + 2;
+            document.getElementById('strength').innerHTML + 1;
+            break;
+        case 'Fire Genasi':
+            document.getElementById('constitution').innerHTML + 2;
+            document.getElementById('intelligence').innerHTML + 1;
+            break;
+        case 'Water Genasi':
+            document.getElementById('constitution').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Gith':
+            document.getElementById('intelligence').innerHTML + 1;
+            break;
+        case 'Githyanki Gith':
+            document.getElementById('strength').innerHTML + 2;
+            document.getElementById('intelligence').innerHTML + 1;
+            break;
+        case 'Githzerai Gith':
+            document.getElementById('wisdom').innerHTML + 2;
+            document.getElementById('intelligence').innerHTML + 1;
+            break;
+        case 'Deep Gnome':
+            document.getElementById('intelligence').innerHTML + 2;
+            document.getElementById('dexterity').innerHTML + 1;
+            break;
+        case 'Goblin':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('constitution').innerHTML + 1;
+            break;
+        case 'Goliath':
+            document.getElementById('strength').innerHTML + 2;
+            document.getElementById('constitution').innerHTML + 1;
+            break;
+        case 'Ghostwise Halfling':
+        case 'Lotusden Halfling':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Hobgoblin':
+            document.getElementById('constitution').innerHTML + 2;
+            document.getElementById('intelligence').innerHTML + 1;
+            break;
+        case 'Kalashtar':
+            document.getElementById('wisdom').innerHTML + 2;
+            document.getElementById('charisma').innerHTML + 1;
+            break;
+        case 'Kenku':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Kobold':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('strength').innerHTML - 2;
+            break;
+        case 'Leonin':
+            document.getElementById('constitution').innerHTML + 2;
+            document.getElementById('strength').innerHTML + 1;
+            break;
+        case 'Lizardfolk':
+        case 'Loxodon':
+            document.getElementById('constitution').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Minotaur':
+        case 'Orc':
+            document.getElementById('strength').innerHTML + 2;
+            document.getElementById('constitution').innerHTML + 1;
+            break;
+        case 'Satyr':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('dexterity').innerHTML + 1;
+            break;
+        case 'Beasthide Shifter':
+            document.getElementById('constitution').innerHTML + 2;
+            document.getElementById('strength').innerHTML + 1;
+            break;
+        case 'Longtooth Shifter':
+            document.getElementById('strength').innerHTML + 2;
+            document.getElementById('dexterity').innerHTML + 1;
+            break;
+        case 'Swiftstride Shifter':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('charisma').innerHTML + 1;
+            break;
+        case 'Wildhunt Shifter':
+            document.getElementById('wisdom').innerHTML + 2;
+            document.getElementById('dexterity').innerHTML + 1;
+            break;
+        case 'Simic Hybrid':
+            document.getElementById('constitution').innerHTML + 2;
+            break;
+        case 'Tabaxi':
+            document.getElementById('dexterity').innerHTML + 2;
+            document.getElementById('charisma').innerHTML + 1;
+            break;
+        case 'Asmodeus Tiefling':
+        case 'Baalzebul Tiefling':
+        case 'Mammon Tiefling':
+        case 'Mephistopheles Tiefling':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('intelligence').innerHTML + 1;
+            break;
+        case 'Dispater Tiefling':
+        case 'Glasya Tiefling':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('dexterity').innerHTML + 1;
+            break;
+        case 'Fierna Tiefling':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Levistus Tiefling':
+        case 'Verdan':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('constitution').innerHTML + 1;
+            break;
+        case 'Zariel Tiefling':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('strength').innerHTML + 1;
+            break;
+        case 'Triton':
+            document.getElementById('strength').innerHTML + 1;
+            document.getElementById('constitution').innerHTML + 1;
+            document.getElementById('charisma').innerHTML + 1;
+            break;
+        case 'Vedalken':
+            document.getElementById('intelligence').innerHTML + 2;
+            document.getElementById('wisdom').innerHTML + 1;
+            break;
+        case 'Warforged':
+            document.getElementById('constitution').innerHTML + 2;
+            document.getElementById('strength').innerHTML + 1;
+            break;
+        case 'Yuan-ti Pureblood':
+            document.getElementById('charisma').innerHTML + 2;
+            document.getElementById('intelligence').innerHTML + 1;
             break;
         }
 
