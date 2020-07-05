@@ -1,5 +1,9 @@
 /* singleserve stylesheet */
 
+/*color palette suggestions
+purple, red+gold, green
+*/
+
 body {
   padding: 2em;
   background: #B29B8C url("../img/paper_texture2.jpg") center;
@@ -47,15 +51,17 @@ table {
 }
 
 .table,
-.table td {
+.table td,
+.table th {
   border: 0 none;
 }
 
-td {
+td,
+th {
   font-size: 20px;
   color: #191A1B;
 }
 
 td:first-child, th:first-child {
-     border-left: none;
+  border-left: none;
 }
