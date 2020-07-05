@@ -12,7 +12,7 @@
 </head>
 
 <header>
-  Version 2.3
+  Version 2.4.1
 
   <div class="container-fluid">
     <h1><b>Pre-Rolled DnD Character Sheet</b></h1>
@@ -37,12 +37,12 @@
         <td id="alignmentDisplay"></td>
       </tr>
       <tr>
-        <td><b>Class:</b></td>
-        <td id="jobDisplay"></td>
-      </tr>
-      <tr>
         <td><b>Background:</b></td>
         <td id="backgroundDisplay"></td>
+      </tr>
+      <tr>
+        <td><b>Class:</b></td>
+        <td id="jobDisplay"></td>
       </tr>
       <tr>
         <td><b>Worships:</b></td>
@@ -80,6 +80,30 @@
     </table>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <table class="table borderless">
+      <tr>
+        <td><b>Trait:</b></td>
+        <td id="traitDisplay"></td>
+      </tr>
+      <tr>
+        <td><b>Ideal:</b></td>
+        <td id="idealDisplay"></td>
+      </tr>
+      <tr>
+        <td><b>Bond:</b></td>
+        <td id="bondDisplay"></td>
+      </tr>
+      <tr>
+        <td><b>Flaw:</b></td>
+        <td id="flawDisplay"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
 
   <button onclick="newChar()" class="rounded-pill">Roll Me!</button>
 
