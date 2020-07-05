@@ -12,7 +12,7 @@
 </head>
 
 <header>
-  Version 2.4.1
+  Version 2.4.2
 
   <div class="container-fluid">
     <h1><b>Pre-Rolled DnD Character Sheet</b></h1>
@@ -21,7 +21,82 @@
 
 <body>
 
-<div class="row">
+  <div class="row">
+    <div class="col-sm-6">
+      <table class="table borderless">
+        <tr>
+          <td><b>Race:</b></td>
+          <td id="raceDisplay"></td>
+        </tr>
+        <tr>
+          <td><b>Gender:</b></td>
+          <td id="genderDisplay"></td>
+        </tr>
+        <tr>
+          <td><b>Alignment:</b></td>
+          <td id="alignmentDisplay"></td>
+        </tr>
+        <tr>
+          <td><b>Background:</b></td>
+          <td id="backgroundDisplay"></td>
+        </tr>
+        <tr>
+          <td><b>Class:</b></td>
+          <td id="jobDisplay"></td>
+        </tr>
+        <tr>
+          <td><b>Worships:</b></td>
+          <td id="religionDisplay"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="col-sm-6">
+      <table class="table borderless">
+        <tr>
+          <td><b>Trait:</b></td>
+          <td id="traitDisplay"></td>
+        </tr>
+        <tr>
+          <td><b>Ideal:</b></td>
+          <td id="idealDisplay"></td>
+        </tr>
+        <tr>
+          <td><b>Bond:</b></td>
+          <td id="bondDisplay"></td>
+        </tr>
+        <tr>
+          <td><b>Flaw:</b></td>
+          <td id="flawDisplay"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table borderless">
+        <tr>
+          <th><b>STR</b></th>
+          <th><b>DEX</b></th>
+          <th><b>CON</b></th>
+          <th><b>INT</b></th>
+          <th><b>WIS</b></th>
+          <th><b>CHA</b></th>
+        </tr>
+        <tr>
+          <td id="strength"></td>
+          <td id="dexterity"></td>
+          <td id="constitution"></td>
+          <td id="intelligence"></td>
+          <td id="wisdom"></td>
+          <td id="charisma"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+<!-- <div class="row">
   <div class="col-sm-8">
     <table class="table borderless">
       <tr>
@@ -102,7 +177,7 @@
       </tr>
     </table>
   </div>
-</div>
+</div> -->
 
 
   <button onclick="newChar()" class="rounded-pill">Roll Me!</button>
