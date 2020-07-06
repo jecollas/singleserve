@@ -1262,7 +1262,7 @@ function newChar() {
 
         document.getElementById('jobDisplay').innerHTML = job;
 
-        var subjob = jobs[job]
+        var subjob = jobs[job];
 
         subjob = randomString(subjob);
         document.getElementById('subjobDisplay').innerHTML = subjob;
@@ -1283,7 +1283,7 @@ function newChar() {
     document.getElementById('wisdom').innerHTML = stats["wis"];
     document.getElementById('charisma').innerHTML = stats["cha"];
 
-    var personality = backgrounds[background]
+    var personality = backgrounds[background];
 
     trait = randomString(personality["trait"]);
     document.getElementById('traitDisplay').innerHTML = trait;
