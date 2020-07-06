@@ -310,7 +310,7 @@ var backgrounds = {
       "I pocket anything I see that might have some value."
     ],
     'ideal': [
-      "<b>Independence.</b> I am a free spirit—no one tells me what to do. (Chaotic)",
+      "<b>Independence.</b> I am a free spirit — no one tells me what to do. (Chaotic)",
       "<b>Fairness.</b> I never target people who can't afford to lose a few coins. (Lawful)",
       "<b>Charity.</b> I distribute the money I acquire to the people who really need it. (Good)",
       "<b>Creativity.</b> I never run the same con twice. (Chaotic)",
@@ -332,6 +332,14 @@ var backgrounds = {
       "I'm too greedy for my own good. I can't resist taking a risk if there's money involved.",
       "I can't resist swindling people who are more powerful than me.",
       "I hate to admit it and will hate myself for it, but I'll run and preserve my own hide if the going gets tough."
+    ],
+    'extra': [
+      "<b>Favorite Scam:</b> I cheat at games of chance.",
+      "<b>Favorite Scam:</b> I shave coins or forge documents",
+      "<b>Favorite Scam:</b> I insinuate myself into people's lives to prey on their weakness and secure their fortunes",
+      "<b>Favorite Scam:</b> I put on new identities like clothes.",
+      "<b>Favorite Scam:</b> I run sleight-of-hand cons on street corners.",
+      "<b>Favorite Scam:</b> I convince people that worthless junk is worth their hard-earned money."
     ]
   },
   'Criminal': {
@@ -368,6 +376,17 @@ var backgrounds = {
       "I have a 'tell' that reveals when I'm lying.",
       "I turn tail and run when things look bad.",
       "An innocent person is in prison for a crime that I committed. I'm okay with that."
+    ],
+    'extra': [
+      "<b>Criminal Specialty:</b> Blackmailer",
+      "<b>Criminal Specialty:</b> Burglar",
+      "<b>Criminal Specialty:</b> Enforcer",
+      "<b>Criminal Specialty:</b> Fence",
+      "<b>Criminal Specialty:</b> Highway robber",
+      "<b>Criminal Specialty:</b> Hired killer",
+      "<b>Criminal Specialty:</b> Pickpocket",
+      "<b>Criminal Specialty:</b> Smuggler",
+      "<b>Criminal Specialty:</b> Spy"
     ]
   },
   'Entertainer': {
@@ -404,6 +423,19 @@ var backgrounds = {
       "I once satirized a noble who still wants my head. It was a mistake that I will likely repeat.",
       "I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble.",
       "Despite my best efforts, I am unreliable to my friends."
+    ],
+    'extra': [
+      "<b>Entertainer Routine:</b> Actor",
+      "<b>Entertainer Routine:</b> Dancer",
+      "<b>Entertainer Routine:</b> Fire-eater",
+      "<b>Entertainer Routine:</b> Jester",
+      "<b>Entertainer Routine:</b> Juggler",
+      "<b>Entertainer Routine:</b> Instrumentalist",
+      "<b>Entertainer Routine:</b> Poet",
+      "<b>Entertainer Routine:</b> Singer",
+      "<b>Entertainer Routine:</b> Storyteller",
+      "<b>Entertainer Routine:</b> Tumbler",
+      "<b>Entertainer Routine:</b> Gladiator"
     ]
   },
   'Folk Hero': {
@@ -440,6 +472,18 @@ var backgrounds = {
       "I have a weakness for the vices of the city, especially hard drink.",
       "Secretly, I believe that things would be better if I were a tyrant lording over the land.",
       "I have trouble trusting in my allies."
+    ],
+    'extra': [
+      "<b>Defining Event:</b> I stood up to a tyrant's agents.",
+      "<b>Defining Event:</b> I saved people during a natural disaster.",
+      "<b>Defining Event:</b> I stood alone against a terrible monster.",
+      "<b>Defining Event:</b> I stole from a corrupt merchant to help the poor.",
+      "<b>Defining Event:</b> I let a militia to fight off an invading army.",
+      "<b>Defining Event:</b> I broke into a tyrant's casle and stole weapons to arm the people.",
+      "<b>Defining Event:</b> I trained the peasantry to use farm implements as weapons against a tyrant's soldiers.",
+      "<b>Defining Event:</b> A lord rescinded an unpopular decree after I led a symbolic act of protest against it.",
+      "<b>Defining Event:</b> A celestial, fey, or similar creature gave me a blessing or revealed my secret origin.",
+      "<b>Defining Event:</b> Recruited into a lord's army, I rose to leadership and was commended for my heroism."
     ]
   },
   'Guild Artisan': {
@@ -476,6 +520,29 @@ var backgrounds = {
       "I'm never satisfied with what I have — I always want more.",
       "I would kill to acquire a noble title.",
       "I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals."
+    ],
+    'extra': [
+      "<b>Guild Business:</b> Alchemists and apothecaries",
+      "<b>Guild Business:</b> Armorers, locksmiths, and finesmiths",
+      "<b>Guild Business:</b> Brewers, distillers, and vintners",
+      "<b>Guild Business:</b> Calligraphers, scribes, and scriveners",
+      "<b>Guild Business:</b> Carpenters, roofers, and plasterers",
+      "<b>Guild Business:</b> Cartographers, surveryors, and chart-makers",
+      "<b>Guild Business:</b> Cobblers and shoemakers",
+      "<b>Guild Business:</b> Cooks and bakers",
+      "<b>Guild Business:</b> Glassblowers and glaziers",
+      "<b>Guild Business:</b> Jewelers and gemcutters",
+      "<b>Guild Business:</b> Leatherworkers, skinners, and tanners",
+      "<b>Guild Business:</b> Masons and stonecutters",
+      "<b>Guild Business:</b> Painters, limners, and sign-makers",
+      "<b>Guild Business:</b> Potters and tile-makers",
+      "<b>Guild Business:</b> Shipwrights and sailmakers",
+      "<b>Guild Business:</b> Smiths and metal-forgers",
+      "<b>Guild Business:</b> Tinkers, pewterers, and casters",
+      "<b>Guild Business:</b> Wagon-makers and wheelwrights",
+      "<b>Guild Business:</b> Weavers and dyers",
+      "<b>Guild Business:</b> Woodcarvers, coopers, and bowyers",
+      "<b>Guild Business:</b> Merchants, traders, caravan masters, or shopkeepers"
     ]
   },
   'Hermit': {
@@ -512,9 +579,55 @@ var backgrounds = {
       "I let my need to win arguments overshadow friendships and harmony.",
       "I'd risk too much to uncover a lost bit of knowledge.",
       "I like keeping secrets and won't share them with anyone."
+    ],
+    'extra': [
+      "<b>Life of Seclusion:</b> I was searching for spiritual enlightenment.",
+      "<b>Life of Seclusion:</b> I was partaking of communal living in accordance with the dictates of a religious order.",
+      "<b>Life of Seclusion:</b> I was exiled for a crime I didn't commit.",
+      "<b>Life of Seclusion:</b> I retreated from society after a life-altering event.",
+      "<b>Life of Seclusion:</b> I needed a quiet place to work on my art, literature, music, or manifesto.",
+      "<b>Life of Seclusion:</b> I needed to commune with nature, far from civilization.",
+      "<b>Life of Seclusion:</b> I was the caretaker of an ancient ruin or relic.",
+      "<b>Life of Seclusion:</b> I was a pilgrim in search of a person, place, or relic of spiritual significance."
     ]
   },
   'Noble': {
+    'trait': [
+      "My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.",
+      "The common folk love me for my kindness and generosity.",
+      "No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses.",
+      "I take great pains to always look my best and follow the latest fashions.",
+      "I don't like to get my hands dirty, and I won't be caught dead in unsuitable accommodations.",
+      "Despite my noble birth, I do not place myself above other folk. We all have the same blood.",
+      "My favor, once lost, is lost forever.",
+      "If you do me an injury, I will crush you, ruin your name, and salt your fields."
+    ],
+    'ideal': [
+      "<b>Respect.</b> Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. (Good)",
+      "<b>Responsibility.</b> It is my duty to respect the authority of those above me, just as those below me must respect mine. (Lawful)",
+      "<b>Independence.</b> I must prove that I can handle myself without coddling from my family. (Chaotic)",
+      "<b>Power.</b> If I can attain more power, no one will tell me what to do. (Evil)",
+      "<b>Family.</b> Blood runs thicker than water. (Any)",
+      "<b>Noble Obligation.</b> It is my duty to protect and care for the people beneath me. (Good)"
+    ],
+    'bond': [
+      "I will face any challenge to win the approval of my family.",
+      "My house's alliance with another noble family must be sustained at all costs.",
+      "Nothing is more important than the other members of my family.",
+      "I am in love with the heir of a family that my family despises.",
+      "My loyalty to my sovereign is unwavering.",
+      "The common folk must see me as a hero of the people."
+    ],
+    'flaw': [
+      "I secretly believe that everyone is beneath me.",
+      "I hide a truly scandalous secret that could ruin my family forever.",
+      "I too often hear veiled insults and threats in every word addressed to me, and I'm quick to anger.",
+      "I have an insatiable desire for carnal pleasures.",
+      "In fact, the world does revolve around me.",
+      "By my words and actions, I often bring shame to my family."
+    ]
+  },
+  'Knight': {
     'trait': [
       "My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.",
       "The common folk love me for my kindness and generosity.",
@@ -584,6 +697,18 @@ var backgrounds = {
       "I am slow to trust members of other races, tribes, and societies.",
       "Violence is my answer to almost any challenge.",
       "Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish."
+    ],
+    'extra': [
+      "<b>Origin:</b> Forester",
+      "<b>Origin:</b> Trapper",
+      "<b>Origin:</b> Homesteader",
+      "<b>Origin:</b> Guide",
+      "<b>Origin:</b> Exile or outcast",
+      "<b>Origin:</b> Bounty hunter",
+      "<b>Origin:</b> Pilgrim",
+      "<b>Origin:</b> Tribal nomad",
+      "<b>Origin:</b> Hunter-gatherer",
+      "<b>Origin:</b> Tribal marauder"
     ]
   },
   'Sage': {
@@ -620,9 +745,55 @@ var backgrounds = {
       "I overlook obvious solutions in favor of complicated ones.",
       "I speak without really thinking through my words, invariably insulting others.",
       "I can't keep a secret to save my life, or anyone else's."
+    ],
+    'extra': [
+      "<b>Specialty:</b> Alchemist",
+      "<b>Specialty:</b> Astronomer",
+      "<b>Specialty:</b> Discredited academic",
+      "<b>Specialty:</b> Librarian",
+      "<b>Specialty:</b> Professor",
+      "<b>Specialty:</b> Researcher",
+      "<b>Specialty:</b> Wizard's apprentice",
+      "<b>Specialty:</b> Scribe"
     ]
   },
   'Sailor': {
+    'trait': [
+      "My friends know they can rely on me, no matter what.",
+      "I work hard so that I can play hard when the work is done.",
+      "I enjoy sailing into new ports and making new friends over a flagon of ale.",
+      "I stretch the truth for the sake of a good story.",
+      "To me, a tavern brawl is a nice way to get to know a new city.",
+      "I never pass up a friendly wager.",
+      "My language is as foul as an otyugh nest.",
+      "I like a job well done, especially if I can convince someone else to do it."
+    ],
+    'ideal': [
+      "<b>Respect.</b> The thing that keeps a ship together is mutual respect between captain and crew. (Good)",
+      "<b>Fairness.</b> We all do the work, so we all share in the rewards. (Lawful)",
+      "<b>Freedom.</b> The sea is freedom — the freedom to go anywhere and do anything. (Chaotic)",
+      "<b>Mastery.</b> I'm a predator, and the other ships on the sea are my prey. (Evil)",
+      "<b>People.</b> I'm committed to my crewmates, not to ideals. (Neutral)",
+      "<b>Aspiration.</b> Someday, I'll own my own ship and chart my own destiny. (Any)"
+    ],
+    'bond': [
+      "I'm loyal to my captain first, everything else second.",
+      "The ship is most important — crewmates and captains come and go.",
+      "I'll always remember my first ship.",
+      "In a harbor town, I have a paramour whose eyes nearly stole me from the sea.",
+      "I was cheated out of my fair share of the profits, and I want to get my due.",
+      "Ruthless pirates murdered my captain and crewmates, plundered our ship, and left me to die. Vengeance will be mine."
+    ],
+    'flaw': [
+      "I follow orders, even if I think they're wrong.",
+      "I'll say anything to avoid having to do extra work.",
+      "Once someone questions my courage, I never back down no matter how dangerous the situation.",
+      "Once I start drinking, it's hard for me to stop.",
+      "I can't help but pocket loose coins and other trinkets I come across.",
+      "My pride will probably lead to my destruction."
+    ]
+  },
+  'Pirate': {
     'trait': [
       "My friends know they can rely on me, no matter what.",
       "I work hard so that I can play hard when the work is done.",
@@ -692,6 +863,16 @@ var backgrounds = {
       "My hatred of my enemies is blinding and unreasoning.",
       "I obey the law, even if the law causes misery.",
       "I'd rather eat my armor than admit when I'm wrong."
+    ],
+    'extra': [
+      "<b>Specialty:</b> Officer",
+      "<b>Specialty:</b> Scout",
+      "<b>Specialty:</b> Infantry",
+      "<b>Specialty:</b> Cavalry",
+      "<b>Specialty:</b> Healer",
+      "<b>Specialty:</b> Quartermaster",
+      "<b>Specialty:</b> Standard bearer",
+      "<b>Specialty:</b> Support staff (cook, blacksmith, or the like)"
     ]
   },
   'Urchin': {
@@ -728,6 +909,405 @@ var backgrounds = {
       "I'd rather kill someone in their sleep than fight fair.",
       "It's not stealing if I need it more than someone else.",
       "People who can't take care of themselves get what they deserve."
+    ]
+  },
+
+  'Anthropologist': {
+    'trait': [
+      "I prefer the company of those who aren't like me, including people of other races",
+      "I'm a stickler when it comes to observing proper etiquette and local customs",
+      "I would rather observe than meddle",
+      "By living among violent people, I have become desensitized to violence.",
+      "I would risk life and limb to discover a new culture or unravel the secrets of a dead one.",
+      "When I arrive at a new settlement for the first time, I must learn all its customs."
+    ],
+    'ideal': [
+      "<b>Discovery.</b> I want to be the first person to discover a lost culture. (Any)",
+      "<b>Distance.</b> One must not interfere with the affairs of another culture - even one in need of aid. (Lawful)",
+      "<b>Knowledge.</b> By understanding other races and cultures, we learn to understand ourselves. (Any)",
+      "<b>Power.</b> Common people crave strong leadership, and I do my utmost to provide it. (Lawful)",
+      "<b>Protection.</b> I must do everything possible to save a society facing extinction. (Good)",
+      "<b>Indifferent.</b> Life is cruel. What's the point in saving people if they're going to die anyway? (Chaotic)"
+    ],
+    'bond': [
+      "My mentor gave me a journal filled with lore and wisdom. Losing it would devastate me.",
+      "Having lived among the people of a primeval tribe or clan, I long to return and see how they are faring.",
+      "Years ago, tragedy struck the members of an isolated society I befriended, and I will honor them.",
+      "I want to learn more about a particular humanoid culture that fascinates me.",
+      "I seek to avenge a clan, tribe, kingdom, or empire that was wiped out.",
+      "I have a trinket that I believe is the key to finding a long-lost society."
+    ],
+    'flaw': [
+      "Boats make me seasick.",
+      "I talk to myself, and I don't make friends easily.",
+      "I believe that I'm intellectually superior to people from other cultures and have much to teach them.",
+      "I've picked up some unpleasant habits living among goblins, lizardfolk, or orcs.",
+      "I complain about everything.",
+      "I wear a tribal mask and never take it off."
+    ],
+    'extra': [
+      "<b>Adopted Culture:</b> Aarakocra",
+      "<b>Adopted Culture:</b> Dwarf",
+      "<b>Adopted Culture:</b> Elf",
+      "<b>Adopted Culture:</b> Goblin",
+      "<b>Adopted Culture:</b> Halfling",
+      "<b>Adopted Culture:</b> Human",
+      "<b>Adopted Culture:</b> Lizardfolk",
+      "<b>Adopted Culture:</b> Orc"
+    ]
+  },
+  'Archaeologist': {
+    'trait': [
+      "I love a good puzzle or mystery",
+      "I'm a pack rat who never throws anything away.",
+      "Fame is more important to me than money.",
+      "I have no qualms about stealing from the dead.",
+      "I'm happier in a dusty old tomb than I am in the centers of civilization.",
+      "Traps don't make me nervous. Idiots who trigger traps make me nervous.",
+      "I might fail, but I will never give up.",
+      "You might think I'm a scholar, but I love a good brawl. These fists were made for punching."
+    ],
+    'ideal': [
+      "<b>Preservation.</b> That artifact belongs in a museum. (Good)",
+      "<b>Greed.</b> I won't risk my life for nothing. I expect some kind of payment. (Any)",
+      "<b>Death Wish.</b> Nothing is more exhilarating than a narrow escape from the jaws of death. (Chaotic)",
+      "<b>Dignity.</b> The dead and their belongings deserve to be treated with respect. (Lawful)",
+      "<b>Immortality.</b> All of my exploring is part of a plan to find the secret of everlasting life. (Any)",
+      "<b>Danger.</b> With every great discovery comes grave danger. The two walk hand in hand. (Any)"
+    ],
+    'bond': [
+      "Ever since I was a child, I've heard stories about a lost city. I aim to find it, learn its secrets, and earn my place in the history books.",
+      "I want to find my mentor, who disappeared on an expedition some time ago.",
+      "I have a friendly rival. Only one of us can be the best, and I aim to prove it's me.",
+      "I won't sell an art object or other treasure that has historical significance or is one of a kind.",
+      "I'm secretly in love with the wealthy patron who sponsors my archaeological exploits.",
+      "I hope to bring prestige to a library, a museum, or a university."
+    ],
+    'flaw': [
+      "I have a secret fear of some common wild animal - and in my work, I see them everywhere.",
+      "I can't leave a room without searching it for secret doors.",
+      "When I'm not exploring dungeons or ruins. I get jittery and impatient.",
+      "I have no time for friends or family. I spend every waking moment thinking about and preparing for my next expedition.",
+      "When given the choice of going left or right, I always go left.",
+      "I can't sleep except in total darkness."
+    ],
+    'extra': [
+      "<b>Signature Item:</b> 10-foot pole",
+      "<b>Signature Item:</b> Crowbar",
+      "<b>Signature Item:</b> Hat",
+      "<b>Signature Item:</b> Hooded lantern",
+      "<b>Signature Item:</b> Medallion",
+      "<b>Signature Item:</b> Shovel",
+      "<b>Signature Item:</b> Sledgehammer",
+      "<b>Signature Item:</b> Whip"
+    ]
+  },
+  'Athlete': {
+    'trait': [
+      "I feel most at peace during physical exertion, be it exercise or battle.",
+      "I don't like to sit idle.",
+      "I have a daily exercise routine that I refuse to break.",
+      "Obstacles exist to be overcome.",
+      "When I see others struggling, I offer to help.",
+      "I love to trade banter and gibes.",
+      "Anything worth doing is worth doing best.",
+      "I get irritated if people praise someone else and not me."
+    ],
+    'ideal': [
+      "<b>Competition.</b> I strive to test myself in all things. (Chaotic)",
+      "<b>Triumph.</b> The best part of winning is seeing my rivals brought low. (Evil)",
+      "<b>Camaraderie.</b> The strongest bonds are forged through struggle. (Good)",
+      "<b>People.</b> I strive to inspire my spectators. (Neutral)",
+      "<b>Tradition.</b> Every game has rules, and the playing field must be level. (Lawful)",
+      "<b>Growth.</b> Lessons hide in victory and defeat. (Any)"
+    ],
+    'bond': [
+      "My teammates are my family.",
+      "I will overcome a rival and prove myself their better.",
+      "My mistake got someone hurt. I'll never make that mistake again.",
+      "I will be the best for the honor and glory of my home.",
+      "The person who trained me is the most important person in my world.",
+      "I strive to live up to a specific hero's example."
+    ],
+    'flaw': [
+      "I indulge in a habit that threatens my reputation or my health.",
+      "I'll do absolutely anything to win.",
+      "I ignore anyone who doesn't compete and anyone who loses to me.",
+      "I have lingering pain from old injuries.",
+      "Any defeat or failure on my part is because my opponent cheated.",
+      "I must be the captain of any group I join."
+    ],
+    'extra': [
+      "<b>Favored Event:</b> Marathon",
+      "<b>Favored Event:</b> Long-distance running",
+      "<b>Favored Event:</b> Wrestling",
+      "<b>Favored Event:</b> Boxing",
+      "<b>Favored Event:</b> Chariot or horse race",
+      "<b>Favored Event:</b> Pankration (mixed unarmed combat)",
+      "<b>Favored Event:</b> Hoplite race (racing in full armor with a unit)",
+      "<b>Favored Event:</b> Pentathlon (running, long jump, discus, javelin, wrestling)"
+    ]
+  },
+  'Faceless': {
+    'trait': [
+      "I'm earnest and uncommonly direct.",
+      "I strive to have no personality—it's easier to forget what's hardly there.",
+      "I treasure a memento of the person or instance that set me upon my path.",
+      "I sleep just as much as I need to and on an unusual schedule.",
+      "I think far ahead, a detachedness often mistaken for daydreaming.",
+      "I cultivate a single obscure hobby or study and eagerly discuss it at length.",
+      "I am ever learning how to be among others — when to stay quiet, when to laugh.",
+      "I behave like an extreme opposite of my persona."
+    ],
+    'ideal': [
+      "<b>Justice.</b> Place in society shouldn't determine one's access to what is right. (Good)",
+      "<b>Security.</b> Doing what must be done can't bring the innocent to harm. (Lawful)",
+      "<b>Confusion.</b> Deception is a weapon. Strike from where your foes won't expect. (Chaotic)",
+      "<b>Infamy.</b> My name will be a malediction, a curse that fulfills my will. (Evil)",
+      "<b>Incorruptibility.</b> Be a symbol, and leave your flawed being behind. (Any)",
+      "<b>Anonymity.</b> It's my deeds that should be remembered, not their instrument. (Any)"
+    ],
+    'bond': [
+      "I do everything for my family. My first thought is keeping them safe.",
+      "What I do, I do for the world. The people don't realize how much they need me.",
+      "I've seen too many in need. I must not fail them as everyone else has.",
+      "I stand in opposition, lest the wicked go unopposed.",
+      "I am exceptional. I do this because no one else can, and no one can stop me.",
+      "I do everything for those who were taken from me.",
+    ],
+    'flaw': [
+      "I am callous about death. It comes to us all eventually.",
+      "I never make eye contact or hold it unflinchingly.",
+      "I have no sense of humor. Laughing is uncomfortable and embarrassing.",
+      "I overexert myself, sometimes needing to recuperate for a day or more.",
+      "I think far ahead, a detachedness often mistaken for daydreaming.",
+      "I see morality entirely in black and white."
+    ],
+    'extra': [
+      "<b>Faceless Persona:</b> A flamboyant spy or brigand.",
+      "<b>Faceless Persona:</b> The incarnation of a nation or people.",
+      "<b>Faceless Persona:</b> A scoundrel with a masked guise.",
+      "<b>Faceless Persona:</b> A vengeful spirit.",
+      "<b>Faceless Persona:</b> The manifestation of a deity or faith.",
+      "<b>Faceless Persona:</b> One whose beauty is greatly accented using makeup.",
+      "<b>Faceless Persona:</b> An impersonation of another hero.",
+      "<b>Faceless Persona:</b> The embodiment of a school of magic.",
+      "<b>Faceless Persona:</b> A warrior with distinctive armor.",
+      "<b>Faceless Persona:</b> A disguise with animalistic or monstrous characteristics, meant to inspire fear."
+    ]
+  },
+  'Far Traveler': {
+    'trait': [
+      "I have different assumptions from those around me concerning personal space, blithely invading others' space in innocence, or reacting to ignorant invasion of my own.",
+      "I have my own ideas about what is and is not food, and I find the eating habits of those around me fascinating, confusing, or revolting.",
+      "I have a strong code of honor or sense of propriety that others don't comprehend.",
+      "I express affection or contempt in ways that are unfamiliar to others.",
+      "I honor my deities through practices that are foreign to this land.",
+      "I begin or end my day with small traditional rituals that are unfamiliar to those around me."
+    ],
+    'ideal': [
+      "<b>Open.</b> I have much to learn from the kindly folk I meet along my way. (Good)",
+      "<b>Reserved.</b> As someone new to these strange lands, I am cautious and respectful in my dealings. (Lawful)",
+      "<b>Adventure.</b> I'm far from home, and everything is strange and wonderful! (Chaotic)",
+      "<b>Cunning.</b> Though I may not know their ways, neither do they know mine, which can be to my advantage. (Evil)",
+      "<b>Inquisitive.</b> Everything is new, but I have a thirst to learn. (Neutral)",
+      "<b>Suspicious.</b> I must be careful, for I have no way of telling friend from foe here. (Any)"
+    ],
+    'bond': [
+      "So long as I have this token from my homeland, I can face any adversity in this strange land.",
+      "The gods of my people are a comfort to me so far away from home.",
+      "I hold no greater cause than my service to my people.",
+      "My freedom is my most precious possession. I'll never let anyone take it from me again.",
+      "I'm fascinated by the beauty and wonder of this new land.",
+      "Though I had no choice, I lament having to leave my loved one(s) behind. I hope to see them again one day."
+    ],
+    'flaw': [
+      "I am secretly (or not so secretly) convinced of the superiority of my own culture over that of this foreign land.",
+      "I pretend not to understand the local language in order to avoid interactions I would rather not have.",
+      "I have a weakness for the new intoxicants and other pleasures of this land.",
+      "I don't take kindly to some of the actions and motivations of the people of this land, because these folks are different from me.",
+      "I consider the adherents of other gods to be deluded innocents at best, or ignorant fools at worst.",
+      "I have a weakness for the exotic beauty of the people of these lands."
+    ],
+    'extra': [
+      "<b>Reason for travel:</b> Emissary",
+      "<b>Reason for travel:</b> Exile",
+      "<b>Reason for travel:</b> Fugitive",
+      "<b>Reason for travel:</b> Pilgrim",
+      "<b>Reason for travel:</b> Sightseer",
+      "<b>Reason for travel:</b> Wanderer"
+    ]
+  },
+  'Gambler': {
+    'trait': [
+      "I plan for every contingency. Leave nothing to chance!",
+      "Every copper wants to be a silver. Each bet is an opportunity.",
+      "I'm one of Lady Luck's favored. Anything I try is destined to succeed.",
+      "I've lost so much to gambling that I refuse to spend money on anything anymore.",
+      "Nothing is certain. Planning is a coward's act.",
+      "I can't be sure who I've swindled, cheated, or defeated, so I keep a low profile in public.",
+      "The perfect bet is out there somewhere. I just have to keep my eyes open.",
+      "I have beaten my addiction, but all it takes is one weak moment and I'll be back at the card table.",
+    ],
+    'ideal': [
+      "<b>Knowledge.</b> Knowledge is power, and knowing which horse to back is the key to success. (Any)",
+      "<b>Fate.</b> Whatever happens is fated, regardless of any planning or striving. (Lawful)",
+      "<b>Bravery.</b> If you want to succeed, you have to take risks. (Chaotic)",
+      "<b>Survival.</b> You can't win if you're dead. Live to fight another day—when the odds might be more in your favor. (Any)",
+      "<b>Reliability.</b> When I was in need, I was able to rely on others. Now I want to be the one others rely on. (Good)",
+      "<b>Victory.</b> Winning is the real measure of a person. In the end, the only thing that matters is the scoreboard. (Evil)"
+    ],
+    'bond': [
+      "One person in particular owes me a lot of money, and I need to keep them alive if I want to be repaid.",
+      "I'm loyal to the friend or family member who taught me how to gamble.",
+      "The person who saved me from my gambling addiction is the only reason I'm alive today.",
+      "A patron once fronted me money in exchange for a percentage of my winnings. I owe them a debt of gratitude. And a lot of cash.",
+      "A criminal syndicate I once played for isn't happy I left the game, and its enforcers are looking for me.",
+      "Urchins once helped me find marks for my games. Now I'm driven to help them escape the streets."
+    ],
+    'flaw': [
+      "I don't know when to quit. Especially when everyone else is telling me to.",
+      "I save my sympathy for my friends, and I have no friends.",
+      "You think we're in trouble now? Let me tell you how bad things are likely to get!",
+      "You can loan me a little, right? I've got a sure thing. I'll double your money, guaranteed.",
+      "I was once a terribly flawed person, like you. Let me tell you how you can save yourself.",
+      "I'm a great gambler. I'm just bad at math and logic."
+    ]
+  },
+  'Haunted One': {
+    'trait': [
+      "I don't run from evil. Evil runs from me.",
+      "I like to read and memorize poetry. It keeps me calm and brings me fleeting moments of happiness.",
+      "I spend money freely and live life to the fullest, knowing that tomorrow I might die.",
+      "I live for the thrill of the hunt.",
+      "I don't talk about the thing that torments me. I'd rather not burden others with my curse.",
+      "I expect danger around every corner.",
+      "I refuse to become a victim, and I will not allow others to be victimized.",
+      "I put no trust in divine beings."
+    ],
+    'ideal': [
+      "I try to help those in need, no matter what the personal cost. (Good)",
+      "I'll stop the spirits that haunt me or die trying. (Any)",
+      "I kill monsters to make the world a safer place, and to exorcise my own demons. (Good)",
+      "I have a dark calling that puts me above the law. (Chaotic)",
+      "I like to know my enemy's capabilities and weaknesses before rushing into battle. (Lawful)",
+      "I'm a monster that destroys other monsters, and anything else that gets in my way. (Evil)"
+    ],
+    'bond': [
+      "I keep my thoughts and discoveries in a journal. My journal is my legacy.",
+      "I would sacrifice my life and my soul to protect the innocent.",
+      "My torment drove away the person I love. I strive to win back the love I've lost.",
+      "A terrible guilt consumes me. I hope that I can find redemption through my actions.",
+      "There's evil in me, I can feel it. It must never be set free.",
+      "I have a child to protect. I must make the world a safer place for him (or her)."
+    ],
+    'flaw': [
+      "I have certain rituals that I must follow every day. I can never break them.",
+      "I assume the worst in people.",
+      "I feel no compassion for the dead. They're the lucky ones.",
+      "I have an addiction.",
+      "I am a purveyor of doom and gloom who lives in a world without hope.",
+      "I talk to spirits that no one else can see."
+    ],
+    'extra': [
+      "<b>Harrowing Event:</b> A monster that slaughtered dozens of innocent people spared your life, and you don't know why.",
+      "<b>Harrowing Event:</b> You were born under a dark star. You can feel it watching you, coldly and distantly. Sometimes it beckons you in the dead of night.",
+      "<b>Harrowing Event:</b> An apparition that has haunted your family for generations now haunts you. You don't know what it wants, and it won't leave you alone.",
+      "<b>Harrowing Event:</b> Your family has a history of practicing the dark arts. You dabbled once and felt something horrible clutch at your soul, whereupon you fled in terror.",
+      "<b>Harrowing Event:</b> An oni took your sibling one cold, dark night, and you were unable to stop it.",
+      "<b>Harrowing Event:</b> You were cursed with lycanthropy and later cured. You are now haunted by the innocents you slaughtered.",
+      "<b>Harrowing Event:</b> A hag kidnapped and raised you. You escaped, but the hag still has a magical hold over you and fills your mind with evil thoughts.",
+      "<b>Harrowing Event:</b> You opened an eldritch tome and saw things unfit for a sane mind. You burned the book, but its words and images are burned into your psyche.",
+      "<b>Harrowing Event:</b> A fiend possessed you as a child. You were locked away but escaped. The fiend is still inside you, but now you try to keep it locked away.",
+      "<b>Harrowing Event:</b> You did terrible things to avenge the murder of someone you loved. You became a monster, and it haunts your waking dreams."
+    ]
+  },
+  'Shipwright': {
+    'trait': [
+      "I love talking and being heard more than I like to listen.",
+      "I'm extremely fond of puzzles.",
+      "I thrive under pressure.",
+      "I love sketching and designing objects, especially boats.",
+      "I'm not afraid of hard work—in fact, I prefer it.",
+      "A pipe, an ale, and the smell of the sea: paradise.",
+      "I have an endless supply of cautionary tales related to the sea.",
+      "I don't mind getting my hands dirty."
+    ],
+    'ideal': [
+      "<b>Crew.</b> If everyone on deck pitches in, we'll never sink. (Good)",
+      "<b>Careful Lines.</b> A ship must be balanced according to the laws of the universe. (Lawful)",
+      "<b>Invention.</b> Make what you need out of whatever is at hand. (Chaotic)",
+      "<b>Perfection.</b> To measure a being and find it lacking is the greatest disappointment. (Evil)",
+      "<b>Reflection.</b> Muddied water always clears in time. (Any)",
+      "<b>Hope.</b> The horizon at sea holds the greatest promise. (Any)"
+    ],
+    'bond': [
+      "I must visit all the oceans of the world and behold the ships that sail there.",
+      "Much of the treasure I claim will be used to enrich my community.",
+      "I must find a kind of wood rumored to possess magical qualities.",
+      "I repair broken things to redeem what's broken in myself.",
+      "I will craft a boat capable of sailing through the most dangerous of storms.",
+      "A kraken destroyed my masterpiece; its teeth shall adorn my hearth."
+    ],
+    'flaw': [
+      "I don't know when to throw something away. You never know when it might be useful again.",
+      "I get frustrated to the point of distraction by shoddy craftsmanship.",
+      "Though I am an excellent crafter, my work tends to look as though it belongs on a ship.",
+      "I am so obsessed with sketching my ideas for elaborate inventions that I sometimes forget little thing like eating and sleeping.",
+      "I'm judgmental of those who are not skilled with tools of some kind.",
+      "I sometimes take things that don't belong to me, especially if they are very well made."
+    ],
+    'extra': [
+      "<b>The Sea's Influence: Grand Designs.</b> You are working on plans and schematics for a new, very fast ship. You must examine as many different kinds of vessels as possible to help ensure the success of your design.",
+      "<b>The Sea's Influence: Solid and Sound.</b> You patched up a war galley and prevented it from sinking. The local navy regards you as a friend.",
+      "<b>The Sea's Influence: Favored.</b> You insisted on thicker planking for a merchant vessel's hull, which saved it from sinking when it smashed against a reef. You have a standing invitation to visit the merchant's distant mansion.",
+      "<b>The Sea's Influence: Master of Armaments.</b> You specialized in designing and mounting defenses for the navy. You easily recognize and determine the quality of such items.",
+      "<b><b>The Sea's Influence: Low Places.</b> You have contacts in the smuggling outfits along the coast; you occasionally repair the criminals' ships in exchange for coin and favors.",
+      "<b>The Sea's Influence: Mysteries of the Deep.</b> You experienced an encounter with a possibly divine being while sailing alone. Work with your DM to determine the secret about the deep waters of the sea that this entity revealed to you."
+    ]
+  },
+  'Smuggler': {
+    'trait': [
+      "I love being on the water but hate fishing.",
+      "I think of everything in terms of monetary value.",
+      "I never stop smiling.",
+      "Nothing rattles me; I have a lie for every occasion.",
+      "I love gold but won't cheat a friend.",
+      "I enjoy doing things others believe to be impossible.",
+      "I become wistful when I see the sun rise over the ocean.",
+      "I am no common criminal; I am a mastermind."
+    ],
+    'ideal': [
+      "<b>Wealth.</b> Heaps of coins in a secure vault is all I dream of. (Any)",
+      "<b>Smuggler's Code.</b> I uphold the unwritten rules of the smugglers, who do not cheat one another or directly harm innocents. (Lawful)",
+      "<b>All for a Coin.</b> I'll do nearly anything if it means I turn a profit. (Evil)",
+      "<b>Peace and Prosperity.</b> I smuggle only to achieve a greater goal that benefits my community. (Good)",
+      "<b>People.</b> For all my many lies, I place a high value on friendship. (Any)",
+      "<b>Daring.</b> I am most happy when risking everything. (Any)"
+    ],
+    'bond': [
+      "My vessel was stolen from me, and I burn with the desire to recover it.",
+      "I intend to become the leader of the network of smugglers that I belong to.",
+      "I owe a debt that cannot be repaid in gold.",
+      "After one last job, I will retire from the business.",
+      "I was tricked by a fellow smuggler who stole something precious from me. I will find that thief.",
+      "I give most of my profits to a charitable cause, and I don't like to brag about it."
+    ],
+    'flaw': [
+      "Lying is reflexive, and I sometimes engage in it without realizing.",
+      "I tend to assess my relationships in terms of profit and loss.",
+      "I believe everyone has a price and am cynical toward those who present themselves as virtuous.",
+      "I struggle to trust the words of others.",
+      "Few people know the real me.",
+      "Though I act charming, I feel nothing for others and don't know what friendship is."
+    ],
+    'extra': [
+      "<b>Claim to Fame: Spirit of the Whale. You smuggled stolen dwarven spirits in the body of a dead whale being pulled behind a fishing boat. When you delivered the goods, the corpse suddenly exploded, sending whale meat and whiskey bottles for half a mile.",
+      "<b>Claim to Fame: Cart and Sword.</b> You drove a cart filled with stolen art through the middle of a battlefield while singing sea shanties to confuse the combatants.",
+      "<b>Claim to Fame: The Recruit.</b> You enlisted in another nation's navy for the purpose of smuggling stolen jewels to a distant port. You attained a minor rank before disappearing from the navy and making your way here.",
+      "<b>Claim to Fame: River of Shadows.</b> Your riverboat accidentally slipped through the veil into the Shadowfell for several hours. While you were there, you sold some stolen dragonborn artifacts before returning to this plane and paddling home.",
+      "<b>Claim to Fame: Gold-Hearted.</b> You agreed to transport a family escaping a war. The baby began to cry at a checkpoint, and you gave the guards all your gold to let you pass. The family never found out about this gesture.",
+      "<b>Claim to Fame: Playing Both Sides.</b> You once smuggled crates of crossbow bolts and bundles of arrows, each destined for an opposing side in a regional war, at the same time. The buyers arrived within moments of each other but did not discover your trickery."
     ]
   }
 };
@@ -987,6 +1567,9 @@ return stats;
 }
 
 function randomString(strings) {
+    if (strings.length == 0) {
+      return '';
+    }
     var randomNumber = random(strings.length);
     return strings[randomNumber];
 }
@@ -1296,5 +1879,16 @@ function newChar() {
 
     flaw = randomString(personality["flaw"]);
     document.getElementById('flawDisplay').innerHTML = flaw;
+
+    extras = personality["extra"];
+
+
+    if (extras != null) {
+      extra = randomString(extras);
+      document.getElementById('extraDisplay').innerHTML = extra;
+    } else {
+      document.getElementById('extraDisplay').innerHTML = '';
+
+    }
 
 }
