@@ -12,7 +12,7 @@
 </head>
 
 <header>
-  Version 2.5.2
+  Version 2.6.1
 
   <div class="container-fluid">
     <h1><b>Pre-Rolled DnD Character Sheet</b></h1>
@@ -20,6 +20,29 @@
 </header>
 
 <body>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table borderless stats">
+        <tr>
+          <th><b>STR</b></th>
+          <th><b>DEX</b></th>
+          <th><b>CON</b></th>
+          <th><b>INT</b></th>
+          <th><b>WIS</b></th>
+          <th><b>CHA</b></th>
+        </tr>
+        <tr>
+          <td id="strength"></td>
+          <td id="dexterity"></td>
+          <td id="constitution"></td>
+          <td id="intelligence"></td>
+          <td id="wisdom"></td>
+          <td id="charisma"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col-sm-6">
@@ -73,28 +96,8 @@
           <td><b>Flaw:</b></td>
           <td id="flawDisplay"></td>
         </tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12">
-      <table class="table borderless stats">
         <tr>
-          <th><b>STR</b></th>
-          <th><b>DEX</b></th>
-          <th><b>CON</b></th>
-          <th><b>INT</b></th>
-          <th><b>WIS</b></th>
-          <th><b>CHA</b></th>
-        </tr>
-        <tr>
-          <td id="strength"></td>
-          <td id="dexterity"></td>
-          <td id="constitution"></td>
-          <td id="intelligence"></td>
-          <td id="wisdom"></td>
-          <td id="charisma"></td>
+          <td colspan="2" id="extraDisplay"></td>
         </tr>
       </table>
     </div>
