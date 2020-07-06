@@ -562,14 +562,14 @@ var backgrounds = {
     'ideal': [
       "<b>Respect.</b> The thing that keeps a ship together is mutual respect between captain and crew. (Good)",
       "<b>Fairness.</b> We all do the work, so we all share in the rewards. (Lawful)",
-      "<b>Freedom.</b> The sea is freedom—the freedom to go anywhere and do anything. (Chaotic)",
+      "<b>Freedom.</b> The sea is freedom — the freedom to go anywhere and do anything. (Chaotic)",
       "<b>Mastery.</b> I'm a predator, and the other ships on the sea are my prey. (Evil)",
       "<b>People.</b> I'm committed to my crewmates, not to ideals. (Neutral)",
       "<b>Aspiration.</b> Someday, I'll own my own ship and chart my own destiny. (Any)"
     ],
     'bond': [
       "I'm loyal to my captain first, everything else second.",
-      "The ship is most important—crewmates and captains come and go.",
+      "The ship is most important — crewmates and captains come and go.",
       "I'll always remember my first ship.",
       "In a harbor town, I have a paramour whose eyes nearly stole me from the sea.",
       "I was cheated out of my fair share of the profits, and I want to get my due.",
