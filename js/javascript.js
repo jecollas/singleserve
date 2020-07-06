@@ -101,22 +101,6 @@ var gender = [
         'Nonbinary'
     ];
 
-// var job = [
-//         'Barbarian',
-//         'Bard',
-//         'Cleric',
-//         'Druid',
-//         'Fighter',
-//         'Monk',
-//         'Paladin',
-//         'Ranger',
-//         'Rogue',
-//         'Sorcerer',
-//         'Warlock',
-//         'Wizard',
-//         'Artificer'
-//     ];
-
 var jobs = {
   'Barbarian': [
     "Path of the Berserker",
