@@ -6,7 +6,8 @@ purple, red+gold, green
 
 body {
   padding: 2em;
-  background: #B29B8C url("../img/paper_texture2.jpg") center;
+  background: #B29B8C;
+  /* url("../img/paper_texture2.jpg") center */
   background-position: top;
   font-family: 'Open Sans', sans-serif;
 }
@@ -54,6 +55,10 @@ table {
 .table td,
 .table th {
   border: 0 none;
+}
+
+.stats {
+  text-align: center;
 }
 
 td,
