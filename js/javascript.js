@@ -101,21 +101,95 @@ var gender = [
         'Nonbinary'
     ];
 
-var job = [
-        'Barbarian',
-        'Bard',
-        'Cleric',
-        'Druid',
-        'Fighter',
-        'Monk',
-        'Paladin',
-        'Ranger',
-        'Rogue',
-        'Sorcerer',
-        'Warlock',
-        'Wizard',
-        'Artificer'
-    ];
+// var job = [
+//         'Barbarian',
+//         'Bard',
+//         'Cleric',
+//         'Druid',
+//         'Fighter',
+//         'Monk',
+//         'Paladin',
+//         'Ranger',
+//         'Rogue',
+//         'Sorcerer',
+//         'Warlock',
+//         'Wizard',
+//         'Artificer'
+//     ];
+
+var jobs = {
+  'Barbarian': [
+    "Path of the Berserker",
+    "Path of the Totem Warrior"
+  ],
+  'Bard': [
+    "College of Lore",
+    "College of Valor"
+  ],
+  'Cleric': [
+    "Knowledge Domain",
+    "Life Domain",
+    "Light Domain",
+    "Nature Domain",
+    "Tempest Domain",
+    "Trickery Domain",
+    "War Domain"
+  ],
+  'Druid': [
+    "Circle of the Land",
+    "Circle of the Moon"
+  ],
+  'Fighter': [
+    "Champion",
+    "Battle Master",
+    "Eldritch Knight"
+  ],
+  'Monk': [
+    "Way of the Open Hand",
+    "Way of Shadow",
+    "Way of the Four Elements"
+  ],
+  'Paladin': [
+    "Oath of Devotion",
+    "Oath of the Ancients",
+    "Oath of Vengeance"
+  ],
+  'Ranger': [
+    "Hunter",
+    "Beast Master"
+  ],
+  'Rogue': [
+    "Thief",
+    "Assassin",
+    "Arcane Trickster"
+  ],
+  'Sorcerer': [
+    "Draconic Bloodline",
+    "Wild Magic"
+  ],
+  'Warlock': [
+    "Pact of the Archfey",
+    "Pact of the Fiend",
+    "Pact of the Great Old One"
+  ],
+  'Wizard': [
+    "School of Abjuration",
+    "School of Conjuration",
+    "School of Divination",
+    "School of Enchantment",
+    "School of Evocation",
+    "School of Illusion",
+    "School of Necromancy",
+    "School of Transmutation"
+  ],
+  'Artificer': [
+    "Alchemist",
+    "Artillerist",
+    "Battle Smith"
+  ]
+};
+
+var job = Object.keys(jobs);
 
 var alignment = [
         'Lawful Good',
@@ -1128,6 +1202,11 @@ function newChar() {
         stats = switchJobs(stats, rightKey, maxKey);
 
         document.getElementById('jobDisplay').innerHTML = job;
+
+        var subjob = jobs[job]
+
+        subjob = randomString(subjob);
+        document.getElementById('subjobDisplay').innerHTML = subjob;
 
         alignment = randomString(sheetGen["alignment"]);
         document.getElementById('alignmentDisplay').innerHTML = alignment;
