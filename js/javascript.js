@@ -104,11 +104,23 @@ var gender = [
 var jobs = {
   'Barbarian': [
     "Path of the Berserker",
-    "Path of the Totem Warrior"
+    "Path of the Totem Warrior",
+    "Path of the Ancestral Guardian",
+    "Path of the Battlerager",
+    "Path of the Storm Herald",
+    "Path of the Zealot",
+    "Path of the Beast",
+    "Path of the Wild Soul",
+    "Path of the Depths"
   ],
   'Bard': [
     "College of Lore",
-    "College of Valor"
+    "College of Valor",
+    "College of Glamour",
+    "College of Swords",
+    "College of Whispers",
+    "College of Shredding",
+    "College of Creation"
   ],
   'Cleric': [
     "Knowledge Domain",
@@ -117,44 +129,97 @@ var jobs = {
     "Nature Domain",
     "Tempest Domain",
     "Trickery Domain",
-    "War Domain"
+    "War Domain",
+    "Arcana Domain",
+    "Death Domain",
+    "Forge Domain",
+    "Grave Domain",
+    "Order Domain",
+    "Twilight Domain",
+    "Unity Domain"
   ],
   'Druid': [
     "Circle of the Land",
-    "Circle of the Moon"
+    "Circle of the Moon",
+    "Circle of Dreams",
+    "Circle of the Shepherd",
+    "Circle of Spores",
+    "Circle of the Stars",
+    "Circle of Wildfire"
   ],
   'Fighter': [
-    "Champion",
+    "Arcane Archer",
     "Battle Master",
-    "Eldritch Knight"
+    "Cavalier",
+    "Champion",
+    "Eldritch Knight",
+    "Purple Dragon Knight",
+    "Samurai",
+    "Gunslinger",
+    "Psi Knight",
+    "Rune Knight",
+    "Renegade"
   ],
   'Monk': [
     "Way of the Open Hand",
     "Way of Shadow",
-    "Way of the Four Elements"
+    "Way of the Four Elements",
+    "Way of the Drunken Master",
+    "Way of the Kensei",
+    "Way of the Long Death",
+    "Way of the Sun Soul",
+    "Way of Mercy",
+    "Way of the Astral Self"
   ],
   'Paladin': [
     "Oath of Devotion",
     "Oath of the Ancients",
-    "Oath of Vengeance"
+    "Oath of Vengeance",
+    "Oath of Conquest",
+    "Oath of the Crown",
+    "Oath of Redemption",
+    "Oathbreaker",
+    "Oath of the Watchers"
   ],
   'Ranger': [
     "Hunter",
-    "Beast Master"
+    "Beast Master",
+    "Gloom Stalker",
+    "Horizon Walker",
+    "Monster Slayer",
+    "Fey Wanderer",
+    "Swarmkeeper"
   ],
   'Rogue': [
     "Thief",
     "Assassin",
-    "Arcane Trickster"
+    "Arcane Trickster",
+    "Inquisitive",
+    "Mastermind",
+    "Scout",
+    "Swashbuckler",
+    "Phantom",
+    "Soulknife",
+    "Wild Card"
   ],
   'Sorcerer': [
     "Draconic Bloodline",
-    "Wild Magic"
+    "Wild Magic",
+    "Divine Soul",
+    "Shadow Magic",
+    "Storm Sorcery",
+    "Clockwork Soul",
+    "Psionic Soul"
   ],
   'Warlock': [
     "Pact of the Archfey",
     "Pact of the Fiend",
     "Pact of the Great Old One"
+    "Pact of the Celestial",
+    "Pact of the Hexblade",
+    "Pact of the Undying",
+    "Pact of the Genie",
+    "Pact of the Lurker in the Deep"
   ],
   'Wizard': [
     "School of Abjuration",
@@ -164,12 +229,21 @@ var jobs = {
     "School of Evocation",
     "School of Illusion",
     "School of Necromancy",
-    "School of Transmutation"
+    "School of Transmutation",
+    "Bladeslinger",
+    "War Magic",
+    "Order of Scribes"
   ],
   'Artificer': [
     "Alchemist",
     "Artillerist",
     "Battle Smith"
+  ],
+  'Blood Hunter': [
+    "Order of the Ghostslayer",
+    "Order of the Lycan",
+    "Order of the Mutant",
+    "Order of the Profane Soul"
   ]
 };
 
@@ -1159,6 +1233,7 @@ function newChar() {
         switch (job) {
         case 'Barbarian':
         case 'Fighter':
+        case 'Blood Hunter':
             rightKey = "str";
             break;
         case 'Monk':
