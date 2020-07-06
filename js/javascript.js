@@ -214,7 +214,7 @@ var jobs = {
   'Warlock': [
     "Pact of the Archfey",
     "Pact of the Fiend",
-    "Pact of the Great Old One"
+    "Pact of the Great Old One",
     "Pact of the Celestial",
     "Pact of the Hexblade",
     "Pact of the Undying",
