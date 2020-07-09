@@ -92,7 +92,12 @@ var race = [
         'Vedalken',
         'Verdan',
         'Warforged',
-        'Yuan-ti Pureblood'
+        'Yuan-ti Pureblood',
+
+        'Felikin',
+        'Rune-walker Felikin',
+        'Kind-eye Felikin',
+        'Wild-bound Felikin'
     ];
 
 var gender = [
@@ -1262,7 +1267,7 @@ var backgrounds = {
       "<b>The Sea's Influence: Solid and Sound.</b> You patched up a war galley and prevented it from sinking. The local navy regards you as a friend.",
       "<b>The Sea's Influence: Favored.</b> You insisted on thicker planking for a merchant vessel's hull, which saved it from sinking when it smashed against a reef. You have a standing invitation to visit the merchant's distant mansion.",
       "<b>The Sea's Influence: Master of Armaments.</b> You specialized in designing and mounting defenses for the navy. You easily recognize and determine the quality of such items.",
-      "<b><b>The Sea's Influence: Low Places.</b> You have contacts in the smuggling outfits along the coast; you occasionally repair the criminals' ships in exchange for coin and favors.",
+      "<b>he Sea's Influence: Low Places.</b> You have contacts in the smuggling outfits along the coast; you occasionally repair the criminals' ships in exchange for coin and favors.",
       "<b>The Sea's Influence: Mysteries of the Deep.</b> You experienced an encounter with a possibly divine being while sailing alone. Work with your DM to determine the secret about the deep waters of the sea that this entity revealed to you."
     ]
   },
@@ -1543,7 +1548,7 @@ function random(maxNum) {
 }
 
 function d3Random() {
-    return random(6) + random(6) + random(6) + 4;
+    return random(6) + random(6) + random(6) + random(6);
 }
 
 function newStats() {
@@ -1645,6 +1650,10 @@ function newChar() {
           case 'Kobold':
           case 'Swiftstride Shifter':
           case 'Tabaxi':
+          case 'Felikin':
+          case 'Rune-walker Felikin':
+          case 'Kind-eye Felikin':
+          case 'Wild-bound Felikin':
             document.getElementById('dexterity').innerHTML + 2;
           break;
 
@@ -1761,6 +1770,7 @@ function newChar() {
           case 'Githzerai Gith':
           case 'Hobgoblin':
           case 'Yuan-ti Pureblood':
+          case 'Rune-walker Felikin':
             document.getElementById('intelligence').innerHTML + 1;
           break;
 
@@ -1781,6 +1791,7 @@ function newChar() {
           case 'Loxodon':
           case 'Fierna Tiefling':
           case 'Vedalken':
+          case 'Wild-bound Felikin':
             document.getElementById('wisdom').innerHTML + 1;
           break;
 
@@ -1801,6 +1812,7 @@ function newChar() {
           case 'Swiftstride Shifter':
           case 'Tabaxi':
           case 'Triton':
+          case 'Kind-eye Felikin':
             document.getElementById('charisma').innerHTML + 1;
           break;
 
