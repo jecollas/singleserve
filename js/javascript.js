@@ -17,26 +17,26 @@ var race = [
         'Red Dragonborn',
         'Silver Dragonborn',
         'White Dragonborn',
-        'Dwarf',
+        // 'Dwarf',
         'Hill Dwarf',
         'Mountain Dwarf',
-        'Elf',
+        // 'Elf',
         'High Elf',
         'Wood Elf',
         'Drow',
-        'Gnome',
+        // 'Gnome',
         'Forest Gnome',
         'Rock Gnome',
         'Half Elf',
         'Half Orc',
-        'Halfling',
+        // 'Halfling',
         'Lightfoot Halfling',
         'Stout Halfling',
         'Human',
-        'Tiefling',
+        // 'Tiefling',
 
         'Aarakocra',
-        'Aasimar',
+        // 'Aasimar',
         'Fallen Aasimar',
         'Protector Aasimar',
         'Scourge Aasimar',
@@ -49,12 +49,12 @@ var race = [
         'Sea Elf',
         'Shadar-kai Elf',
         'Firbolg',
-        'Genasi',
+        // 'Genasi',
         'Air Genasi',
         'Earth Genasi',
         'Fire Genasi',
         'Water Genasi',
-        'Gith',
+        // 'Gith',
         'Githyanki Gith',
         'Githzerai Gith',
         'Deep Gnome',
@@ -72,7 +72,7 @@ var race = [
         'Minotaur',
         'Orc',
         'Satyr',
-        'Shifter',
+        // 'Shifter',
         'Beasthide Shifter',
         'Longtooth Shifter',
         'Swiftstride Shifter',
@@ -94,7 +94,7 @@ var race = [
         'Warforged',
         'Yuan-ti Pureblood',
 
-        'Felikin',
+        // 'Felikin',
         'Rune-walker Felikin',
         'Kind-eye Felikin',
         'Wild-bound Felikin'
@@ -102,8 +102,17 @@ var race = [
 
 var gender = [
         'Male',
+        'Male (trans)',
+        'Male (intersex)',
         'Female',
-        'Nonbinary'
+        'Female (trans)',
+        'Female (intersex)',
+        'Nonbinary',
+        'Nonbinary (intersex)',
+        'Agender',
+        'Genderfluid',
+        'Demiboy',
+        'Demigirl'
     ];
 
 var jobs = {
@@ -217,14 +226,14 @@ var jobs = {
     "Psionic Soul"
   ],
   'Warlock': [
-    "Pact of the Archfey",
-    "Pact of the Fiend",
-    "Pact of the Great Old One",
-    "Pact of the Celestial",
-    "Pact of the Hexblade",
-    "Pact of the Undying",
-    "Pact of the Genie",
-    "Pact of the Lurker in the Deep"
+    "The Archfey",
+    "The Fiend",
+    "The Great Old One",
+    "The Celestial",
+    "The Hexblade",
+    "The Undying",
+    "The Genie",
+    "The Lurker in the Deep"
   ],
   'Wizard': [
     "School of Abjuration",
@@ -1631,7 +1640,7 @@ function newChar() {
             document.getElementById('strength').innerHTML + 2;
           break;
 
-          case 'Elf':
+          // case 'Elf':
           case 'Eladrin Elf':
           case 'High Elf':
           case 'Pallid Elf':
@@ -1639,7 +1648,7 @@ function newChar() {
           case 'Shadar-kai Elf':
           case 'Wood Elf':
           case 'Drow':
-          case 'Halfling':
+          // case 'Halfling':
           case 'Ghostwise Halfling':
           case 'Lightfoot Halfling':
           case 'Lotusden Halfling':
@@ -1650,18 +1659,18 @@ function newChar() {
           case 'Kobold':
           case 'Swiftstride Shifter':
           case 'Tabaxi':
-          case 'Felikin':
+          // case 'Felikin':
           case 'Rune-walker Felikin':
           case 'Kind-eye Felikin':
           case 'Wild-bound Felikin':
             document.getElementById('dexterity').innerHTML + 2;
           break;
 
-          case 'Dwarf':
+          // case 'Dwarf':
           case 'Duergar Dwarf':
           case 'Hill Dwarf':
           case 'Mountain Dwarf':
-          case 'Genasi':
+          // case 'Genasi':
           case 'Air Genasi':
           case 'Earth Genasi':
           case 'Fire Genasi':
@@ -1676,7 +1685,7 @@ function newChar() {
             document.getElementById('constitution').innerHTML + 2;
           break;
 
-          case 'Gnome':
+          // case 'Gnome':
           case 'Deep Gnome':
           case 'Forest Gnome':
           case 'Rock Gnome':
@@ -1692,7 +1701,7 @@ function newChar() {
           break;
 
           case 'Half Elf':
-          case 'Tielfling':
+          // case 'Tielfling':
           case 'Asmodeus Tiefling':
           case 'Baalzebul Tiefling':
           case 'Mammon Tiefling':
@@ -1702,7 +1711,7 @@ function newChar() {
           case 'Glasya Tiefling':
           case 'Levistus Tiefling':
           case 'Zariel Tiefling':
-          case 'Aasimar':
+          // case 'Aasimar':
           case 'Protector Aasimar':
           case 'Fallen Aasimar':
           case 'Scourge Aasimar':
@@ -1759,13 +1768,13 @@ function newChar() {
           case 'Eladrin Elf':
           case 'High Elf':
           case 'Human':
-          case 'Tiefling':
+          // case 'Tiefling':
           case 'Asmodeus Tiefling':
           case 'Baalzebul Tiefling':
           case 'Mammon Tiefling':
           case 'Mephistopheles Tiefling':
           case 'Fire Genasi':
-          case 'Gith':
+          // case 'Gith':
           case 'Githyanki Gith':
           case 'Githzerai Gith':
           case 'Hobgoblin':
@@ -1779,7 +1788,7 @@ function newChar() {
           case 'Wood Elf':
           case 'Human':
           case 'Aarakocra':
-          case 'Aasimar':
+          // case 'Aasimar':
           case 'Protector Aasimar':
           case 'Centaur':
           case 'Changeling':
@@ -1903,4 +1912,15 @@ function newChar() {
 
     }
 
+}
+
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
